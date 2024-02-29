@@ -23,6 +23,7 @@ export default function Home() {
       <button
         type="button"
         onClick={() => {
+          if (task === "") return;
           setTasksArray([...tasksArray, task]);
           setTask("");
         }}
